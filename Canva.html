@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <canvas id="MyCreation" width="500" height="500" style="border:1px solid black"></canvas>
+        <script>
+            var c = document.getElementById("MyCreation");
+            var ctx = c.getContext("2d");
+                 ctx.font="30px Courier";
+            ctx.fillText("Happy Holidays and...",10,50);
+            ctx.strokeText("MERRY CHRISTMAS!", 10,100);
+            //Gradient
+            var grd=ctx.createLinearGradient(50,75,200,0);
+            grd.addColorStop(0,"Red");
+            grd.addColorStop(1,"Green");
+            //Fill Gradient
+            ctx.fillStyle=grd;
+            ctx.fillRect(200,200,150,180);
+        
+        </script>
+
+</body>
+
+</html>

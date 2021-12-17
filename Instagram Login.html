@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background: linear-gradient(rgb(255, 0, 200), red, yellow)
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        background: rgb(255, 255, 255);
+        padding: 12px 20px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: rgb(0, 217, 255);
+
+    }
+
+    input {
+        width: 300px;
+        padding: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    #FormContent {
+        border-radius: 5px;
+        padding-right:100px;
+        padding-top: 20px;
+        float: right;
+    }
+
+    #Logo {
+        border-radius: 5px;
+        padding-left:120px;
+        padding-top: 125px;
+        float: left; 
+        
+        
+    }
+
+    Input[Type=Radio]
+    {padding: none;
+    }
+</style>
+<title>Login Form</title>
+
+<body>
+    <div id="FormContent">
+        <form>
+            <div> <input type="text" placeholder="Full Name..."> </div>
+            <div> <input type="text" placeholder="Email..."> </div>
+            <div> <input type="text" placeholder="Username..."> </div>
+            <div> <input type="password" placeholder="Password..."> </div>
+
+            <label for="Gender">Gender</label>
+            <br><br>
+           Male. <input type="radio" name="gender">
+            <br>
+          Female<input type="radio" name="gender">
+            <br>
+          Other <input type="radio" name="gender">
+          <br>
+          <label for="Country">Country</label>
+          <br><br>
+          <select>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+          </select>
+            <br> <br>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+    
+    <div id="Logo"> <img src="Pictures/Instagram Logo.png">
+
+</body>
+
+</html>
